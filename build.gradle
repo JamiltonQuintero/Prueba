@@ -17,7 +17,7 @@ repositories {
 apply plugin: 'java'
 jar {
 	manifest {
-		attributes 'Main-Class': 'com.example.DemoApplication'
+		attributes 'Main-Class': 'com.example.demo.DemoApplication'
 	}
 }
 dependencies {
