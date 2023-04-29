@@ -14,10 +14,12 @@ repositories {
 	maven { url 'https://repo.spring.io/snapshot' }
 }
 
-springBoot {
-	mainClass = 'com.example.DemoApplication'
+apply plugin: 'java'
+jar {
+	manifest {
+		attributes 'Main-Class': 'com.example.DemoApplication'
+	}
 }
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
