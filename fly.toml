@@ -1,15 +1,14 @@
-# fly.toml app configuration file generated for small-dust-2167 on 2023-04-30T10:43:17-05:00
+# fly.toml app configuration file generated for prueba-test-youtube on 2023-05-01T16:19:17-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "small-dust-2167"
+app = "prueba-test-youtube"
 primary_region = "bog"
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = true
   auto_start_machines = true
 
 [checks]
